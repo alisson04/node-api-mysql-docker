@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS patientsdb;
+
+USE patientsdb;
+
+DROP TABLE IF EXISTS patients;
+
+CREATE TABLE patients (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(255) DEFAULT NULL,
+    PRIMARY KEY (id)
+);
